@@ -1,0 +1,86 @@
+[debug] [2018-10-04T11:29:04.969Z] ----------------------------------------------------------------------
+[debug] [2018-10-04T11:29:04.973Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abhinav\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-10-04T11:29:04.974Z] CLI Version:   4.2.1
+[debug] [2018-10-04T11:29:04.974Z] Platform:      win32
+[debug] [2018-10-04T11:29:04.974Z] Node Version:  v8.12.0
+[debug] [2018-10-04T11:29:04.974Z] Time:          Thu Oct 04 2018 16:59:04 GMT+0530 (India Standard Time)
+[debug] [2018-10-04T11:29:04.974Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-04T11:29:04.988Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-10-04T11:29:04.989Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\blogapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-10-04T11:29:23.647Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-04T11:29:23.647Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-10-04T11:29:24.048Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-04T11:29:24.138Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ 
+[debug] [2018-10-04T11:29:25.955Z] <<< HTTP RESPONSE 200
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2018-10-04T11:29:58.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-04T11:29:58.391Z] > authorizing via signed-in user
+[debug] [2018-10-04T11:29:58.392Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-04T11:29:58.392Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2018-10-04T11:29:58.702Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-04T11:29:58.789Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/blogfeed-2a8e6  
+ 
+[debug] [2018-10-04T11:30:00.032Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-04T11:30:00.037Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/blogfeed-2a8e6?updateMask=usageSettings  
+
+[debug] [2018-10-04T11:30:00.038Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/blogfeed-2a8e6?updateMask=usageSettings  
+
+[debug] [2018-10-04T11:30:02.831Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-04T11:30:02.954Z] <<< HTTP RESPONSE 200
+[info] +  Wrote functions/package.json
+[info] +  Wrote functions/index.js
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote y/404.html
+[debug] [2018-10-04T11:30:58.453Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2018-10-04T11:30:58.696Z] <<< HTTP RESPONSE 200
+[info] +  Wrote y/index.html
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2018-10-04T11:31:09.460Z] Error: EISDIR: illegal operation on a directory, open 'D:\blogapp\dist'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.writeFileSync (fs.js:1299:33)
+    at Config.writeProjectFile (C:\Users\abhinav\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:195:6)
+    at C:\Users\abhinav\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\storage.js:31:19
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:229:7)
+[error] 
+[error] Error: An unexpected error has occurred.
